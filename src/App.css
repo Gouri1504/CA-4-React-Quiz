@@ -1,0 +1,187 @@
+html{
+    background-color: rgb(55, 46, 46);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.QuestionBox{
+    height: 100vh;
+    width: 100%;
+}
+.Options-box{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Options-box button{
+    height: 7vh;
+    width: 80%;
+    background-color:#A8DADC;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40px;
+}
+.Options-box button:hover{
+    background-color:#6DC2C5;
+    color: whitesmoke;
+}
+.highlightButtons{
+    display: flex;
+    justify-content:center;
+    margin: auto;
+    align-items: center;
+    font-weight: bolder;
+    width: 75%;
+}
+.highlightButtons button{
+    height: 6vh;
+    width: 10vw;
+    border-radius: 40px;
+    font-weight: bolder;
+    background-color: #457B9D;
+    color: whitesmoke;
+    margin: 10px;
+}
+.highlightButtons button:hover{
+    background-color: #6399BB;
+    color: black;
+}
+.questionBox{
+    padding: 20px;
+    position: relative;
+    margin: auto;
+    top: 10%;
+    text-align: center;
+    height: 60vh;
+    width: 75vw;
+    background-color: #fefefe;
+    box-shadow: 10px black;
+    border-radius: 15px;
+}
+.Header{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+}
+
+h1 {
+  margin-left: 1vw;
+}
+.modeToggle{
+    height: 5vh;
+    width: 15vh;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    transition: ease-in-out 0.4s;
+}
+.modeToggle:hover{
+    border: rgba(31, 95, 190, 0.815) solid 2px;
+    transform: scale(1.1);
+}
+.ResultBox{
+    height: 40vh;
+    width: 50vw;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 40px white;
+    color: white;
+    background-color: rgb(51, 47, 47);
+    border-radius: 20px;
+}
+
+.ResultBox button{
+    height: 7vh;
+    width: 15vw;
+    font-size: 18px;
+    border-radius: 40px;
+    background-color: rgb(116, 168, 216);
+}
+.ResultBox button:hover{
+    background-color:rgb(122, 168, 192);
+    border: 2px solid white;
+    color: white;
+}
+
+.logo{
+    width: 100px;
+    border-radius: 50%;
+
+}
+
+.logo_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 700px) {
+    .Header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .highlightButtons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .highlightButtons button{
+        width: 80%;
+    }
+    .Options-box button{
+        width: 100%;
+        height: 6vh;
+        font-size: 18px;
+    }
+    .ResultBox{
+        width: 80%;
+        position: relative;
+        left: 11%;
+    }
+    .ResultBox button{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .highlightButtons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .highlightButtons button{
+        width: 80%;
+    }
+    .Options-box button{
+        width: 100%;
+        height: 6vh;
+        font-size: 18px;
+    }
+    .ResultBox{
+        width: 80%;
+        position: relative;
+        left: 11%;
+    }
+    .ResultBox button{
+        width: 80%;
+    }
+}
